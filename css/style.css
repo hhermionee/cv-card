@@ -1,27 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:500,600);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background-image: url(../img/body__background.png);
-    font-family: "Inter";
-    src: url(https://fonts.googleapis.com/css?family=Inter:500,600);
+    font-family: "Inter", sans-serif;
     color: #fff;
+    margin: 90px 100px;
 }
+
 h1{
     font-size: 75px;
+    line-height: 75px;
+    word-wrap: break-word;
+    margin-bottom: 65px;
 }
+
+h2{
+    font-size: 30px;
+    line-height: 25px;
+    margin: 7px 0px 15px 0px;
+}
+
+p, ul, ol{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+ul{
+    padding-left: 10px;
+}
+
+li{
+    margin: 10px 0px;
+}
+
 .main{
     margin: 0 auto;
     width: 100%;
     max-width: 1680px;
 }
-.block{
+
+.block {
     display: inline-block;
-    width: 33%;
+    width: 30%;
     vertical-align: top;
+}
+
+.left-block, .center-block{
+    margin-right: 50px;
+}
+
+.info{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 35px;
+}
+
+.info__logo {
+    height: 30px;
+    width: 30px;
+    
+}
+
+.info__heading{
+    opacity: 0.6;
+}
+
+.skill{
+    margin-top: 17px;
 }
 
 .skill__progressbar{
     height: 7px;
     background: #555;
 }
+
 .skill__progressbar > span{
     display: block;
     height: 100%;
@@ -29,32 +87,41 @@ h1{
     position: relative;
     overflow: hidden;
 }
-.info{
-    display: inline-block;
-    width: 49%;
-    margin-bottom: 28px;
-}
-.info__logo {
-    height: 30px;
-    width: 30px;
-    
-}
-.info__heading{
-    opacity: 0.6;
-}
+
 .skill__name, .paragraph__description{
     opacity: 0.8;
 }
-.photo{
-    position: relative;
-    width: 100%;
-}
-.block{
-    max-width: 610px;
-    max-height: 650px;
 
+.paragraph{
+    margin-bottom: 45px;
 }
-.quote{
+
+.right-block {
+    margin: -40px 0px;
     position: relative;
-    bottom: 80px;
+} 
+
+.quote{
+    position: absolute;
+    bottom: 85px;
+    margin: 0px 50px;
+}
+
+.quote__text{
+    position: relative;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.quote__text::before{
+    content: "\“";
+    font-family: inherit;
+    position: absolute;
+    left: -15px;
+    top: 0px;
+} 
+
+.quote__text::after{
+    content: "\”";
 }
