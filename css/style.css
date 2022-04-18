@@ -9,7 +9,9 @@ body{
     background-image: url(../img/body__background.png);
     font-family: "Inter", sans-serif;
     color: #fff;
-    margin: 90px 100px;
+    /* margin: 90px 100px; */
+    max-width: 1480px;
+    margin: 90px auto;
 }
 
 h1{
@@ -23,6 +25,7 @@ h2{
     font-size: 30px;
     line-height: 25px;
     margin: 7px 0px 15px 0px;
+    word-wrap: break-word;
 }
 
 p, ul, ol{
@@ -99,6 +102,10 @@ li{
 .right-block {
     margin: -40px 0px;
     position: relative;
+    height: 750px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 7px;
 } 
 
 .quote{
@@ -124,4 +131,8 @@ li{
 
 .quote__text::after{
     content: "\”";
+}
+
+@media screen {
+    
 }
