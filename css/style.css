@@ -60,8 +60,22 @@ li{
 
 .info{
     display: inline-block;
+    vertical-align: top;
     width: 49%;
     margin-bottom: 35px;
+}
+
+.info > p{
+    /* max-height: 75px; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -ms-line-clamp: 3;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 
 .info__logo {
