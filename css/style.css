@@ -9,9 +9,60 @@ body{
     background-image: url(../img/body__background.png);
     font-family: "Inter", sans-serif;
     color: #fff;
-    /* margin: 90px 100px; */
+    
+}
+
+.main{
+    margin: 50px auto;
     max-width: 1480px;
-    margin: 90px auto;
+    padding: 0px 15px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.block {
+    vertical-align: top;
+    padding: 40px 0px;
+    max-width: 460px;
+}
+
+@media (max-width: 1419px){
+    .main{
+        max-width: 980px;
+    }
+    .block{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 1199px){
+    .main{
+        max-width: 980px;
+    }
+    .block{
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 992px){
+    .main{
+        flex-direction: column;
+        max-width: 780px;
+    }
+    .block{
+        max-width: none;
+        margin: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main{
+        max-width: none;
+    }
+    .block{
+        margin: 15px;
+    }
 }
 
 h1{
@@ -42,22 +93,6 @@ li{
     margin: 10px 0px;
 }
 
-.main{
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1680px;
-}
-
-.block {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-}
-
-.left-block, .center-block{
-    margin-right: 50px;
-}
-
 .info{
     display: inline-block;
     vertical-align: top;
@@ -66,7 +101,6 @@ li{
 }
 
 .info > p{
-    /* max-height: 75px; */
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -ms-line-clamp: 3;
@@ -114,13 +148,17 @@ li{
 }
 
 .right-block {
-    margin: -40px 0px;
     position: relative;
-    height: 750px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 7px;
+    padding: 0px;
+    overflow: hidden;
 } 
+
+.photo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
 
 .quote{
     position: absolute;
@@ -145,8 +183,4 @@ li{
 
 .quote__text::after{
     content: "\”";
-}
-
-@media screen {
-    
 }
